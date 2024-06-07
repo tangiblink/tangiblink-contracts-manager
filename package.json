@@ -1,0 +1,53 @@
+{
+  "name": "tangiblink-domains-smart-contracts",
+  "license": "MIT",
+  "version": "0.1.0",
+  "description": "Deploy and manage Tangiblink smart contracts",
+  "scripts": {
+    "prepare": "husky install",
+    "compile": "hardhat compile",
+    "test": "npm run test:unit",
+    "test:unit": "hardhat test test/unit/*.spec.js",
+    "lint": "npm run lint:contracts && npm run format:check",
+    "lint:fix": "solhint 'contracts/**/*.sol' --fix",
+    "lint:contracts": "solhint 'contracts/*.sol'",
+    "lint:contracts:fix": "solhint 'contracts/**/*.sol' --fix",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "getDeployment": "node tasks/utils/getDeployment.js"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "0.5.1",
+    "@chainlink/env-enc": "^1.0.5",
+    "@ensdomains/eth-ens-namehash": "^2.0.15",
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/providers": "^5.7.1",
+    "@nomicfoundation/hardhat-foundry": "^1.1.1",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-ledger": "^1.0.3",
+    "@openzeppelin/contracts": "^5.0.0",
+    "@openzeppelin/contracts-upgradeable": "^4.9.2",
+    "hardhat-contract-sizer": "^2.6.1",
+    "solhint": "^3.3.7",
+    "solhint-plugin-prettier": "^0.0.5"
+  },
+  "lint-staged": {
+    "*.{js,json,yml,yaml}": [
+      "prettier --write"
+    ],
+    "*.sol": [
+      "prettier --write",
+      "solhint"
+    ]
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": false,
+    "printWidth": 120
+  }
+}
