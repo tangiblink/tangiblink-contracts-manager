@@ -1,20 +1,20 @@
 {
   "polygonMainnet": {
-    "metadata": "0x5bCFFdfcF6d4A3d71D25127bab0672675304e8eF",
-    "domainRegistry": "0xE27e12196bD823c8f3e55ab74758985F9FAFBf82"
+    "metadata": "0x5bcffdfcf6d4a3d71d25127bab0672675304e8ef",
+    "domainRegistry": "0xe27e12196bd823c8f3e55ab74758985f9fafbf82"
   },
   "polygonAmoy": {
-    "metadata": "0xf2667Bc486557Cdb96E7E1e07dfbe2FB0171bFDC",
-    "domainRegistry": "0x9fcC139A66b11C01fFE9eB51a510a1ec3ca23441",
-    "usdPriceFeed": "0x47d35597F68027D12e7B1aD011C87922E56C0777"
+    "metadata": "0xf2667bc486557cdb96e7e1e07dfbe2fb0171bfdc",
+    "domainRegistry": "0x9fcc139a66b11c01ffe9eb51a510a1ec3ca23441",
+    "usdPriceFeed": "0x47d35597f68027d12e7b1ad011c87922e56c0777"
   },
   "ethereumSepolia": {
-    "metadata": "0x7844435664403E5da4105b3400713D987295e453",
-    "domainRegistry": "0x50c74C4bFaa8d876fb9525926F316B87ef8e023c"
+    "metadata": "0x7844435664403e5da4105b3400713d987295e453",
+    "domainRegistry": "0x50c74c4bfaa8d876fb9525926f316b87ef8e023c"
   },
   "localhost": {
-    "metadata": "0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82",
-    "domainRegistry": "0x9A676e781A523b5d0C0e43731313A708CB607508",
-    "usdPriceFeed": "0xA51c1fc2f0D1a1b8494Ed1FE312d7C3a78Ed91C0"
+    "metadata": "0x0dcd1bf9a1b36ce34237eeafef220932846bcd82",
+    "domainRegistry": "0x9a676e781a523b5d0c0e43731313a708cb607508",
+    "usdPriceFeed": "0xa51c1fc2f0d1a1b8494ed1fe312d7c3a78ed91c0"
   }
 }

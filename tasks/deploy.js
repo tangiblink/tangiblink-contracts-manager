@@ -94,14 +94,14 @@ const deploy = async (_gasLimit) => {
   console.log("\nDeployed contract addresses")
   if (network.name == "localhost" || network.name == "polygonAmoy") {
     console.table({
-      "Metadata contract": metadataContractAddress,
-      "DomainRegistry contract": domainRegistryAddress,
-      "usdPriceFeed contract": usdPriceFeedAddress,
+      "Metadata contract": metadataContractAddress.toLowerCase(),
+      "DomainRegistry contract": domainRegistryAddress.toLowerCase(),
+      "usdPriceFeed contract": usdPriceFeedAddress.toLowerCase(),
     })
   } else {
     console.table({
-      "Metadata contract": metadataContractAddress,
-      "DomainRegistry contract": domainRegistryAddress,
+      "Metadata contract": metadataContractAddress.toLowerCase(),
+      "DomainRegistry contract": domainRegistryAddress.toLowerCase(),
     })
   }
 
@@ -134,10 +134,10 @@ const deploy = async (_gasLimit) => {
   }
   // parse json
   jsonParsed = JSON.parse(jsonData)
-  jsonParsed[network.name].metadata = metadataContractAddress
-  jsonParsed[network.name].domainRegistry = domainRegistryAddress
+  jsonParsed[network.name].metadata = metadataContractAddress.toLowerCase()
+  jsonParsed[network.name].domainRegistry = domainRegistryAddress.toLowerCase()
   if (network.name == "localhost" || network.name == "polygonAmoy") {
-    jsonParsed[network.name].usdPriceFeed = usdPriceFeedAddress
+    jsonParsed[network.name].usdPriceFeed = usdPriceFeedAddress.toLowerCase()
   }
 
   // stringify JSON Object

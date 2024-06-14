@@ -12,9 +12,9 @@ const updateForgeTestConfig = async (
 ) => {
   console.warn("\nRemember to check forgeTestConfig values:")
   console.table({
-    domainRegistryAddress: domainRegistryAddress,
-    metadataAddress: metadataAddress,
-    usdPriceFeedAddress: usdPriceFeedAddress,
+    domainRegistryAddress: domainRegistryAddress.toLowerCase(),
+    metadataAddress: metadataAddress.toLowerCase(),
+    usdPriceFeedAddress: usdPriceFeedAddress.toLowerCase(),
     baseURL: baseURL,
     mintCostUsd: `${mintCostUsd.toString()} ($${ethers.formatUnits(mintCostUsd)})`,
     feePercent: `${feePercent.toString()} (${(feePercent / 100).toString()}%)`,

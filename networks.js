@@ -42,7 +42,7 @@ const networks = {
     nativeCurrencySymbol: "MATIC",
     metadata: networkAddresses.polygonMainnet.metadata,
     domainRegistry: networkAddresses.polygonMainnet.domainRegistry,
-    usdPriceFeed: "0xAB594600376Ec9fD91F8e885dADF0CE036862dE0", // MATIC/USD
+    usdPriceFeed: "0xab594600376ec9fd91f8e885dadf0ce036862de0", // MATIC/USD
   },
 
   polygonAmoy: {
@@ -57,7 +57,7 @@ const networks = {
     nativeCurrencySymbol: "MATIC",
     metadata: networkAddresses.polygonAmoy.metadata,
     domainRegistry: networkAddresses.polygonAmoy.domainRegistry,
-    usdPriceFeed: "0xd0D5e3DB44DE05E9F294BB0a3bEEaF030DE24Ada", // MATIC/USD
+    usdPriceFeed: "0xd0d5e3db44de05e9f294bb0a3beeaf030de24ada", // MATIC/USD
   },
 
   ethereumSepolia: {
@@ -72,7 +72,7 @@ const networks = {
     nativeCurrencySymbol: "ETH",
     metadata: networkAddresses.ethereumSepolia.metadata,
     domainRegistry: networkAddresses.ethereumSepolia.domainRegistry,
-    usdPriceFeed: "0x694AA1769357215DE4FAC081bf1f309aDC325306", // ETH/USD
+    usdPriceFeed: "0x694aa1769357215de4fac081bf1f309adc325306", // ETH/USD
   },
 
   localhost: {
