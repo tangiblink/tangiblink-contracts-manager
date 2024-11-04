@@ -57,7 +57,7 @@ const networks = {
     nativeCurrencySymbol: "MATIC",
     metadata: networkAddresses.polygonAmoy.metadata,
     domainRegistry: networkAddresses.polygonAmoy.domainRegistry,
-    usdPriceFeed: "0xd0d5e3db44de05e9f294bb0a3beeaf030de24ada", // MATIC/USD
+    usdPriceFeed: networkAddresses.polygonAmoy.usdPriceFeed, // MATIC/USD
   },
 
   ethereumSepolia: {
